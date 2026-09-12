@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankun's Lego World</title>
+<meta name="description" content="Ankun's Lego World — cool Lego builds and ideas, explained in videos.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%23d01012%22/><circle cx=%2250%22 cy=%2240%22 r=%2218%22 fill=%22%23ffcd00%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo" aria-label="Ankun's Lego World home">
+      <span class="brick brick--red">A</span>
+      <span class="brick brick--yellow">N</span>
+      <span class="brick brick--blue">K</span>
+      <span class="brick brick--green">U</span>
+      <span class="brick brick--red">N</span>
+      <span class="logo-sub">'s Lego World</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#gallery">Builds</a>
+      <a href="#about">About</a>
+      <a href="#youtube">YouTube</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-studs" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <h1>Welcome to my <span class="hl">Lego</span> world!</h1>
+      <p class="hero-lead">
+        Hi, I'm Ankun! I build cool Lego creations and make videos explaining
+        how they work and how I designed them. Check out my builds below.
+      </p>
+      <a class="btn btn--primary" href="#gallery">See my builds ↓</a>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery-section">
+    <div class="wrap">
+      <h2 class="section-title">My Lego Builds</h2>
+      <p class="section-sub">Click a build to watch the video and read about how it works.</p>
+      <div id="gallery-grid" class="gallery-grid">
+        <!-- Project cards are rendered here by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="wrap about-inner">
+      <div class="about-studs" aria-hidden="true"><span></span><span></span><span></span></div>
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I love building with Lego and coming up with new ideas — from working
+        mechanisms to mini worlds. This site is where I share my favorite
+        creations and explain how I built them, one video at a time.
+      </p>
+    </div>
+  </section>
+
+  <section id="youtube" class="youtube-section">
+    <div class="wrap youtube-inner">
+      <h2 class="section-title">Subscribe on YouTube</h2>
+      <p>New builds and explanations are posted on my YouTube channel.</p>
+      <a class="btn btn--youtube" href="#" id="youtube-channel-link" target="_blank" rel="noopener">
+        ▶ Visit My Channel
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Built with ❤️ for Ankun's Lego creations.</p>
+  </div>
+</footer>
+
+<div id="video-modal" class="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog">
+    <button class="modal-close" data-close aria-label="Close video">✕</button>
+    <div class="modal-video-wrap">
+      <div id="modal-video-slot" class="modal-video-slot"></div>
+    </div>
+    <div class="modal-info">
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
