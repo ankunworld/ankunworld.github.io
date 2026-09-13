@@ -65,6 +65,15 @@ a { color: inherit; }
   font-size: 1.3rem;
 }
 
+.logo-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--ink);
+  margin-right: 4px;
+}
+
 .logo-sub {
   color: var(--ink);
   margin-left: 8px;
@@ -142,6 +151,17 @@ a { color: inherit; }
   height: 20px;
   border-radius: 50%;
   background: rgba(255,255,255,0.18);
+}
+
+.hero-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--lego-yellow);
+  box-shadow: var(--shadow);
+  margin: 30px auto 0;
+  display: block;
 }
 
 .hero h1 {
